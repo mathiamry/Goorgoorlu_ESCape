@@ -25,14 +25,14 @@ create table Goorgoorlukat(
     nom varchar(32),
     prenom varchar(32),
     note int,
+    id_profession int
     localisation varchar(32),
-    constraint pk_user primary key(username)
+    constraint pk_user primary key(username),
+    constraint fk_id foreign key(id_profession) references job(id)
 );
 
-
 create table job(
+    id int auto_increment,
     libelle varchar(32),
-    id_goorgoolukat int,
-    constraint pk_lib_id primary key(libelle,id_goorgoolukat),
-    constraint fk_id foreign key(id_goorgoolukat) references Goorgoorlukat(id)
+    constraint pk_id primary key(id),
 );
