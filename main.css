@@ -4,8 +4,7 @@
 }
 img.menu_icon
 {
-	width: 28px;
-	margin:;
+	width: 28px; 
 	border:none;
 }
 
@@ -29,6 +28,72 @@ ul>li:hover
 	color: #f9f9f9;
 }
 
+
+.backblueapp
+{
+  background-color: #0ea6ca;
+}
+
+.splashimg
+{
+	margin-top: 200px;
+}
+
+.backicon
+{
+	width: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+input
+{
+	background-color: transparent;
+	color: white;
+	font-family: 'caps';
+
+}
+
+input::-webkit-input-placeholder 
+{ 
+	color: #f2f2f2;
+	
+}
+input::-moz-placeholder
+{ 
+	color: #f2f2f2;
+	
+}
+
+input.j_submit
+{
+	border:solid 0.5px #f2f2f2;
+	background-color: #f9f9f9;
+	color: #0ea6ca;
+}
+input.j_submit:hover
+{
+	background-color:transparent;
+	color: #f2f2f2;
+	border:solid 0.5px #f2f2f2;
+
+}
+.c_midwhite
+{
+	color: #f2f2f2;
+}
+.refs
+{
+	position: absolute;
+	bottom: 10px;
+	display: block;
+	width: 100%;
+	color: #f2f2f2;
+}
+.activeItem
+{
+	background-color: #087792;
+}
 
 /************** MEDIA QUERIES ***************/
 /********************************************/
@@ -67,6 +132,11 @@ ul>li:hover
 
   }
 
+  .logobig
+  {
+  	transform: scale(2);
+  }
+
 
  }
 /***************       End        ****************/
@@ -75,6 +145,12 @@ ul>li:hover
 /***************       PCs       *****************/
  @media only screen and (min-width: 1025px)
  {
+
+  .logobig
+  {
+  	transform: scale(2);
+  }
+
 
   
   .apptitle
