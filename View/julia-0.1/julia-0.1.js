@@ -202,9 +202,9 @@ setSpec = function(node, aClass,media)
 
 ///////// MAIN PROCESS ////////////
 
-window.addEventListener("load", function()
 
-   {
+ main = function()
+ {
 
 		var Tags = parseAll();
     
@@ -336,14 +336,26 @@ window.addEventListener("load", function()
 
 
 
+}
 
 
 
 
 
 
+ ////////////////////Init Julia ////////////////////////
+
+  
+window.addEventListener("load", function()
+   {
+     main();
+   });
+window.addEventListener("resize", function()
+   {
+     main();
+   });
+
+ 
 
 
-
-	});
-
+ //////////////////////////////////////////////////////
